@@ -11,5 +11,11 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "@11ty/eleventy-navigation": "github:11ty/eleventy-navigation",
+    "@11ty/eleventy-plugin-rss": "github:11ty/eleventy-plugin-rss",
+    "@11ty/eleventy-plugin-syntaxhighlight": "github:11ty/eleventy-plugin-syntaxhighlight",
+    "markdown-it-anchor": "^8.6.7"
   }
 }
