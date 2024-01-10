@@ -14,8 +14,19 @@ local_backend: true
 collections:
   - label: "Metadata"
     name: "Metadata"
-    file: "_data/metadata.json"
-    fields:
-      - { label: Name, name: name, widget: string }
-      - { label: Author, name: author, widget: string }
-      - { label: URL, name: url, widget: string }
+    editor:
+      preview: true
+    files:
+      - label: "Metadata Items"
+        name: "Metadata Items"
+        file: "_data/metadata.json"
+        fields:
+          - label: Metadata Fields
+            name: Metadata Fields
+            widget: list
+            allow_add: false
+            collapsed: false
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Author, name: author, widget: string }
+              - { label: URL, name: url, widget: string }
