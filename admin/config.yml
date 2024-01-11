@@ -1,21 +1,23 @@
 backend:
   # Use netlify identity as backend
   name: git-gateway
-  branch: master
+  branch: main
   ### enable below lines for github integration ###
   #name: github
   #repo: dreon/rengo-11ty-decap
-media_folder: "assets/img"
+media_folder: "/assets/img"
 public_folder: "/assets/img"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
-local_backend: true
+local_backend: false
 # publish_mode: editorial_workflow
 collections:
   - label: "Metadata"
     name: "Metadata"
+    extension: json
+    format: json
     editor:
-      preview: true
+      preview: false
     files:
       - label: "Metadata Items"
         name: "Metadata Items"
@@ -24,9 +26,9 @@ collections:
           - label: Metadata Fields
             name: Metadata Fields
             widget: list
-            allow_add: false
-            collapsed: false
+            allow_add: true
+            collapsed: true
             fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Author, name: author, widget: string }
-              - { label: URL, name: url, widget: string }
+              - { name: 'name' }
+              - { name: 'author' }
+              - { name: 'url' }
