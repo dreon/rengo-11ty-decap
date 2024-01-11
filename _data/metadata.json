@@ -1,4 +1,12 @@
-{"name": "Blogneato",
-"author": "Matthew Longbottom",
-"url": "https://blogneato.com/"
+{
+  "name": "Blogneato",
+  "author": "Matthew Longbottom",
+  "url": "https://blogneato.com/",
+  "Metadata Fields": [
+    {
+      "name": "Tony",
+      "author": "Matthew Long",
+      "url": "https://apple.com"
+    }
+  ]
 }
