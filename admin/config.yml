@@ -4,7 +4,7 @@ backend:
   branch: master
   ### enable below lines for github integration ###
   #name: github
-  repo: dreon/rengo-11ty-decap
+  #repo: dreon/rengo-11ty-decap
 media_folder: "assets/img"
 public_folder: "/assets/img"
 
