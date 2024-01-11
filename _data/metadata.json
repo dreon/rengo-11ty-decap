@@ -4,6 +4,11 @@
       "name": "Tony",
       "author": "Matthew Long",
       "url": "https://apple.com"
+    },
+    {
+      "name": "Robbins",
+      "author": "Kaplan",
+      "url": "http://goo.com"
     }
   ]
 }
