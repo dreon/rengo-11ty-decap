@@ -40,16 +40,17 @@ collections:
     editor:
       preview: false
     files:
-      - label: "Jason's On/Off"
+      - label: "On/Off List"
         name: "jason-onoff"
         file: "_data/jason.json"
         fields:
-          - label: Jason's On/Off
-            name: jason-onoff
+          - label: "On/Off"
+            name: "jason-onoff"
             widget: list
             allow_add: true
             collapsed: true
-            summary: 'Jason is ... {{fields.body}}'
+            summary: "Jason is ... {{fields.body}}"
             fields:
-              - { name: 'onoff', widget: "boolean"} 
-              - { name: 'body'}
+              - { name: 'onoff', widget: "boolean", default: false}
+              - { name: 'body' }
+              - { name: 'timestamp', widget: datetime }
