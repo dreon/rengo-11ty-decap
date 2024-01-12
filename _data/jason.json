@@ -1,14 +1,4 @@
 {
-  "jason-onof-details": [
-    {
-      "onof": true,
-      "body": "Local weather forecasters"
-    },
-    {
-      "body": "Timberwolves basketball.",
-      "onof": true
-    }
-  ],
   "jason-onoff": [
     {
       "onoff": true,
