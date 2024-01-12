@@ -17,6 +17,10 @@
     {
       "body": "local weather forecasters.",
       "onoff": true
+    },
+    {
+      "onoff": true,
+      "body": "Pizzaz™ pizza ovens."
     }
   ]
 }
