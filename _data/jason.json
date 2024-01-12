@@ -13,6 +13,10 @@
     {
       "onoff": true,
       "body": "Timberwolves basketball."
+    },
+    {
+      "body": "local weather forecasters.",
+      "onoff": true
     }
   ]
 }
