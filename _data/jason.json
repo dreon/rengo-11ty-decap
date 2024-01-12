@@ -11,6 +11,10 @@
     {
       "onoff": true,
       "body": "Pizzaz™ pizza ovens."
+    },
+    {
+      "onoff": false,
+      "body": "Donald Trump."
     }
   ]
 }
