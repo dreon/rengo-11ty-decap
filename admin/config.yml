@@ -17,8 +17,8 @@ collections:
     folder: "on-off/jason" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    summary: "{{fields.body}}"
+    summary: "{{fields.pronouncement}}"
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "On/Off", name: "onoff", widget: "string"}
-      - {label: "Body", name: "body", widget: "string"}
+      - {label: "Body", name: "pronouncement", widget: "string"}
