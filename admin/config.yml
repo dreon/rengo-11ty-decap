@@ -17,9 +17,10 @@ collections:
     folder: "on-off/jason" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    summary: "{{fields.pronouncement}}"
+    summary: "Jason is {{fields.onoff}} {{fields.pronouncement}} ({{fields.date}})"
     identifier_field: pronouncement
     fields: # The fields for each document, usually in front matter
+      - {label: "Date", name: "date", widget: "datetime", default: "", date_format: "YYYY-MM-DD", format: "YYYY-MM-DD", time_format: false}
       - {label: "On/Off", name: "onoff", widget: "string"}
       - {label: "Body", name: "pronouncement", widget: "string"}
 
@@ -27,9 +28,11 @@ collections:
     label: "Kyle On/Off" # Used in the UI
     folder: "on-off/kyle" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    summary: "{{fields.pronouncement}}"
+    slug: "{{date}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    summary: "Kyle is {{fields.onoff}} {{fields.pronouncement}} ({{fields.date}})"
     identifier_field: pronouncement
+    sortable_fields: ['date', 'pronouncement']
     fields: # The fields for each document, usually in front matter
+      - {label: "Date", name: "date", widget: "datetime", default: "", date_format: "YYYY-MM-DD", format: "YYYY-MM-DD", time_format: false}
       - {label: "On/Off", name: "onoff", widget: "string"}
-      - {label: "Body", name: "pronouncement", widget: "string"}
+      - {label: "Pronouncement", name: "pronouncement", widget: "string"}
