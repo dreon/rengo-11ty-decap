@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+---
+<ul>
+{%- for onoff in collections.onoff -%}
+  <li>{{ onoff.data.user }} is {{ onoff.data.onoff }} {{ onoff.data.pronouncement }}</li>
+{%- endfor -%}
+</ul>
+

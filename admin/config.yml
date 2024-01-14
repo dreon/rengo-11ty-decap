@@ -13,12 +13,23 @@ local_backend: false
 # publish_mode: editorial_workflow
 collections:
   - name: "jason-on-off" # Used in routes, e.g., /admin/collections/blog
-    label: "Jason's On/Off" # Used in the UI
+    label: "Jason On/Off" # Used in the UI
     folder: "on-off/jason" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     summary: "{{fields.pronouncement}}"
+    identifier_field: pronouncement
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "On/Off", name: "onoff", widget: "string"}
+      - {label: "Body", name: "pronouncement", widget: "string"}
+
+  - name: "kyle-on-off" # Used in routes, e.g., /admin/collections/blog
+    label: "Kyle On/Off" # Used in the UI
+    folder: "on-off/kyle" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    summary: "{{fields.pronouncement}}"
+    identifier_field: pronouncement
+    fields: # The fields for each document, usually in front matter
       - {label: "On/Off", name: "onoff", widget: "string"}
       - {label: "Body", name: "pronouncement", widget: "string"}
