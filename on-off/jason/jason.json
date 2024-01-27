@@ -1,1 +1,2 @@
-{ "user": "Rengo" }
+{ "user": "Rengo",
+"layout": "partials/on-off.njk" }

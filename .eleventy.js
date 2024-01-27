@@ -14,7 +14,7 @@ const dates = require("./js/dates.js");
 module.exports = function(eleventyConfig) {
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy({
-    "./assets":"./assets",
+    "./assets":"./",
     "./admin/config.yml": "./admin/config.yml",
   });
 

@@ -1,9 +1,13 @@
 ---
 layout: layouts/base.njk
 ---
-<ul>
-{%- for onoff in collections.onoff -%}
-  <li>{{ onoff.data.user }} is {{ onoff.data.onoff }} {{ onoff.data.pronouncement }}</li>
-{%- endfor -%}
-</ul>
 
+{%- for onoff in collections.onoff | reverse -%}
+  {%- if (onoff.data.user) == "Rengo" -%}
+    {%- if (onoff.data.onoff) == "on" -%}
+      <p style="font-size:large">{{ onoff.data.user }} is <input type="checkbox" disabled data-toggle="toggle" data-size="sm" checked> {{ onoff.data.pronouncement }}</p>
+    {%- else -%}
+      <p style="font-size:large">{{ onoff.data.user }} is <input type="checkbox" disabled data-toggle="toggle" data-size="sm"> {{ onoff.data.pronouncement }}</p>
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
