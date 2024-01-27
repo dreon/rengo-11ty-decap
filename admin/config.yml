@@ -11,6 +11,10 @@ public_folder: "/assets/img"
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: false
 # publish_mode: editorial_workflow
+
+editor:
+  preview: false
+
 collections:
   - name: "jason-on-off" # Used in routes, e.g., /admin/collections/blog
     label: "Jason On/Off" # Used in the UI
